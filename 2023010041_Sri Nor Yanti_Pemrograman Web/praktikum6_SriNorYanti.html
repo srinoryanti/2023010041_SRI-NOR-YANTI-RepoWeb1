@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #b3d9ff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px; /* Adjust the spacing between logo and text */
+        }
+        .header .logo {
+            width: 60px; /* Adjust logo size as needed */
+            height: auto;
+        }
+        .header .text {
+            text-align: left;
+            display: flex;
+            flex-direction: column; /* Stack text items vertically */
+            align-items: flex-start; /* Align text to the left */
+        }
+        .header .text h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header .text p {
+            margin: 5px 0 0 0;
+            font-size: 16px;
+        }
+        .navigation {
+            background-color: #e6f7ff;
+            padding: 10px;
+            text-align: center;
+        }
+        .main-body {
+            display: flex;
+            padding: 20px;
+        }
+        .content {
+            background-color: #ffecb3;
+            flex: 2;
+            padding: 20px;
+        }
+        .sidebar {
+            background-color: #ffcc80;
+            flex: 1;
+            padding: 20px;
+            margin-left: 10px;
+        }
+        .footer {
+            background-color: #d9d9d9;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer img {
+            width: 30px;
+            height: auto;
+        }
+        .navigation a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+            cursor: pointer;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <img src="polibang.png" alt="Logo Kampus" class="logo">
+        <h1>POLITEKNIK BALEKAMBANG</h1>
+        <p>Execellent and Character Building</p>
+    </div>
+    <!-- Navigation Section -->
+    <div class="navigation">
+        <a href="#home">Home</a>
+        <a href="#internal1">Internal Page 1</a>
+        <a href="#internal2">Internal Page 2</a>
+        <a href="https://example.com" target="_blank">External Link</a>
+        <a href="#form">Form</a>
+    </div>
+
+    <!-- Main Body Section -->
+    <div class="main-body">
+        <!-- Content Area -->
+        <div class="content">
+            <h2>Visi, Misi, dan Dosen Prodi RPL</h2>
+            <h3>Visi</h3>
+            <p>Menjadi Program Studi Vokasi di bidang Rekayasa Perangkat Lunak Berdaya Saing Global, Profesional dan berjiwa Technopreunership</p>
+            
+            <h3>Misi</h3>
+            <ul>
+                <li>Menyelenggarakan pendidikan vokasi di bidang Teknologi Rekayasa Perangkat Lunak sesuai dengan perkembangan ilmu pengetahuan dan teknologi yang berjiwa Technopreuneship</li>
+                <li>Menyelenggarakan riset-riset di bidang Teknologi Rekayasa Perangkat Lunak yang inovatif, berkualitas dan bermanfaat untuk pengembangan ilmu pengetahuan dan teknologi</li>
+                <li>Meningkatkan kerjasama strategis yang produktif dengan lembaga pendidikan, pemerintah dan dunia usaha ditingkat nasional dan internasional dalam mengatasi permasalahan di bidang Teknologi Rekayasa Perangkat Lunak.</li>
+            </ul>
+            
+            <h3>Dosen Prodi RPL</h3>
+            <ul>
+                <li>Kresna Rahma Aji, S.Pd, M.Pd.</li>
+                <li>Sofia Ulfah, M.Kom.</li>
+                <li>Indra Kurniawan, M.Kom.</li>
+                <li>Muhammad Dliyaudin, M.Kom.</li>
+                <li>Ahlis Noor Kholili, M.Kom</li>
+            </ul>
+        </div>
+
+        <!-- Sidebar Area -->
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li onclick="showInfo('Friend 1')">Friend 1</li>
+                <li onclick="showInfo('Friend 2')">Friend 2</li>
+                <li onclick="showInfo('Friend 3')">Friend 3</li>
+                <li onclick="showInfo('Friend 4')">Friend 4</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <img src="polibang.png" alt="Logo">
+        <p>Identitas Pembuat: Sri Nor Yanti, Mahasiswa Prodi RPL</p>
+        <p>Alamat Institusi: Balekambang Rt 02 Rw 07 Gemiring Lor Nalumsari Jepara 59466 Jawa Tengah</p>
+    </div>
+
+    <script>
+        function showInfo(name) {
+            alert(name + "'s photo and identity will be displayed here.");
+        }
+    </script>
+</body>
+</html>
