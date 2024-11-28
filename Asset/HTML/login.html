@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registrasi</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* tampilan kotan ketika di klik */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            background: white;
+            padding: 50px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .modal-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .modal input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .modal button {
+            width: 100%;
+            padding: 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .modal button:hover {
+            background: #2E7D32;
+        }
+
+        .modal .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        /* Background overlay */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website Utama</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="konten.html">Konten</a></li>
+            <li><a href="picture.html">Picture</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Login atau Registrasi</h2>
+        <button id="btnLogin">Login</button>
+        <button id="btnRegister">Registrasi</button>
+    </main>
+
+    <!-- Login Modal -->
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="loginModal">
+        <span class="close" id="closeLogin">&times;</span>
+        <div class="modal-header">Form Login</div>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registerModal">
+        <span class="close" id="closeRegister">&times;</span>
+        <div class="modal-header">Form Registrasi</div>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <footer>
+        <img src="Image/polibang.png" alt="Logo Polibang">
+        <p>&copy; 2024 | NIM: 2023010041 | Nama: Sri Nor Yanti</p>
+    </footer>
+
+    <script>
+        // Script untuk membuka dan menutup modal
+        const btnLogin = document.getElementById('btnLogin');
+        const btnRegister = document.getElementById('btnRegister');
+        const loginModal = document.getElementById('loginModal');
+        const registerModal = document.getElementById('registerModal');
+        const closeLogin = document.getElementById('closeLogin');
+        const closeRegister = document.getElementById('closeRegister');
+        const overlay = document.getElementById('overlay');
+
+        // Fungsi membuka modal
+        btnLogin.addEventListener('click', () => {
+            loginModal.style.display = 'block';
+            overlay.style.display = 'block';
+        });
+
+        btnRegister.addEventListener('click', () => {
+            registerModal.style.display = 'block';
+            overlay.style.display = 'block';
+        });
+
+        // Fungsi menutup modal
+        closeLogin.addEventListener('click', () => {
+            loginModal.style.display = 'none';
+            overlay.style.display = 'none';
+        });
+
+        closeRegister.addEventListener('click', () => {
+            registerModal.style.display = 'none';
+            overlay.style.display = 'none';
+        });
+
+        // Menutup modal jika overlay diklik
+        overlay.addEventListener('click', () => {
+            loginModal.style.display = 'none';
+            registerModal.style.display = 'none';
+            overlay.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

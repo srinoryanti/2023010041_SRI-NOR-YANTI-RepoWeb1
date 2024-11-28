@@ -1,0 +1,12 @@
+body {
+    background-image:url(backround.png) ;
+    background-position: top center;
+    background-repeat: no-repeat;
+    /*untuk membuat css bg tidak di ulang menggunakan backround no-repeat*/
+}
+.h1 {
+    text-align: center;
+}
+.p {
+    text-align: center;
+}

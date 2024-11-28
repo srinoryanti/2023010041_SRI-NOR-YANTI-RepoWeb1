@@ -1,0 +1,217 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.header-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Header */
+/* Header */
+.colored-header {
+    background-color: #06e2fb; /* Warna biru tua */
+    color: white; /* Warna teks putih */
+    position: relative; /* Membuat konteks positioning */
+    height: 200px; /* Menentukan tinggi header */
+    display: flex; /* Membuat elemen di dalam header fleksibel */
+    align-items: center; /* Vertikal rata tengah (opsional jika ada konten lain) */
+    justify-content: flex-start; /* Default ke kiri */
+    padding: 20px;
+}
+
+/* Konten di Sudut Kanan Bawah */
+.colored-header .header-content {
+    position: absolute; /* Posisi bebas dalam konteks header */
+    bottom: 10px; /* Jarak dari bawah */
+    right: 20px; /* Jarak dari kanan */
+    text-align: right; /* Teks rata kanan */
+}
+
+.colored-header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.colored-header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+
+/* Navigasi */
+nav {
+    background: #000080;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #0056b3;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    margin: 20px 0;
+}
+
+/* Sidebar */
+aside {
+    width: 25%;
+    background: #f9f9f9;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+}
+
+.logo-sidebar {
+    display: block;
+    width: 100px; /* Adjust logo size */
+    height: auto;
+    margin: 0 auto 15px; /* Center logo */
+}
+
+aside h2 {
+    background: #000080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+aside ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+aside ul li a:hover {
+    color: #000080;
+}
+
+/* Section */
+section {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+section h1 {
+    color: #000080;
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+/* Galeri */
+.gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 32%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    border-color: #000080;
+}
+
+/* Footer */
+footer {
+    background: #000080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
