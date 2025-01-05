@@ -1,0 +1,278 @@
+/* Reset margin and padding */
+body, h1, h2, p, ul, li, header, nav, main, footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: #030303;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(to right, hsl(300, 81%, 34%), hsl(300, 81%, 34%));
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header img {
+    width: 100px; /* Sesuaikan ukuran lebar */
+    height: auto; /* Menjaga proporsi */
+    margin: 0 auto; /* Pusatkan jika diperlukan */
+    display: block; /* Pastikan gambar tampil sebagai blok */
+    border-radius: 10px; /* Opsional: Tambahkan sedikit lengkungan pada sudut */
+    box-shadow: 0 2px 4px rgba(198, 103, 103, 0.2); /* Opsional: Efek bayangan */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    background: #f3b0f3e8;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0;
+}
+
+nav ul li a {
+    color: hsl(300, 81%, 34%);
+    text-decoration: none;
+    padding: 15px 25px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: white;
+}
+
+/* Main content styling order */
+main {
+    padding: 2rem;
+    background: #f3b0f3e8;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+main h2 {
+    color: hsl(300, 81%, 34%);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+main p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Gallery styling for picture.html */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Form styling for order.html */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding: 0.5rem;
+    border: 1px solid hsl(300, 81%, 34%);
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    background: hsl(300, 81%, 34%);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #ff00ff;;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: hsl(300, 81%, 34%);
+    color: white;
+    margin-top: 2rem;
+}
+
+footer img {
+    width: 50px;
+    display: block;
+    margin: 0.5rem auto;
+}
+/* Gaya untuk Foto Profil */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Membuat foto menjadi lingkaran */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+    object-fit: cover; /* Menyesuaikan proporsi gambar */
+    border: 3px solid hsl(300, 81%, 34%); /* Tambahkan border warna  */
+}
+
+/* Gaya untuk Header Image */
+.header-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan lembut */
+}
+
+/* Gaya tambahan untuk teks profil (nama) */
+.profile-info h2 {
+    font-size: 1.8rem;
+    color:hsl(300, 81%, 34%);
+    margin-bottom: 10px;
+}
+.profile-info p {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+}
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    background: #f3b0f3e8;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-info h2 {
+    color: #f3b0f3e8;;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-info ul {
+    margin: 1rem 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+/* tampilan kotan ketika di klik */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: white;
+    padding: 50px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.modal-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal button {
+    width: 100%;
+    padding: 20px;
+    background: hsl(300, 81%, 34%);
+    color: #ff00ff80;;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.modal button:hover {
+    background: hsl(300, 81%, 34%);
+}
+
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Background overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+
