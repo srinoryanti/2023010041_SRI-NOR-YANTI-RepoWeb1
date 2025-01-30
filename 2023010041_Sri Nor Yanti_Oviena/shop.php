@@ -1,3 +1,7 @@
+<?php
+// Start session (if needed for authentication or cart functionality)
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,7 +72,7 @@
         <h2>Latest Products</h2>
       </div>
       <div class="row">
-        <!-- Product 1 -->
+<!-- Product 1 -->
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
             <a href="#">
@@ -83,7 +87,7 @@
             </a>
           </div>
         </div>
-        <!-- Product 2 -->
+<!-- Product 2 -->
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
             <a href="#">
@@ -98,7 +102,7 @@
             </a>
           </div>
         </div>
-        <!-- Product 3 -->
+<!-- Product 3 -->
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
             <a href="#">
@@ -113,7 +117,7 @@
             </a>
           </div>
         </div>
-        <!-- Product 4 -->
+<!-- Product 4 -->
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
             <a href="#">
@@ -122,13 +126,13 @@
               </div>
               <div class="detail-box">
                 <h6>Flower Bouquet</h6>
-                <h6>Price: <span>$45</span></h6>
+                <h6>Price: <span>$125</span></h6>
               </div>
               <div class="new"><span>New</span></div>
             </a>
           </div>
         </div>
-        <!-- Product 5 -->
+<!-- Product 5 -->
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
             <a href="#">
@@ -137,13 +141,13 @@
               </div>
               <div class="detail-box">
                 <h6>Teddy Bear</h6>
-                <h6>Price: <span>$95</span></h6>
+                <h6>Price: <span>$105</span></h6>
               </div>
               <div class="new"><span>New</span></div>
             </a>
           </div>
         </div>
-        <!-- Product 6 -->
+ <!-- Product 6 -->
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
             <a href="#">
@@ -152,13 +156,13 @@
               </div>
               <div class="detail-box">
                 <h6>Flower Bouquet</h6>
-                <h6>Price: <span>$70</span></h6>
+                <h6>Price: <span>$120</span></h6>
               </div>
               <div class="new"><span>New</span></div>
             </a>
           </div>
         </div>
-        <!-- Product 7 -->
+<!-- Product 7 -->
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
             <a href="#">
@@ -166,14 +170,14 @@
                 <img src="images/tg coklat.jpeg" alt="Watch">
               </div>
               <div class="detail-box">
-                <h6>Watch</h6>
-                <h6>Price: <span>$400</span></h6>
+                <h6>Flower Brown</h6>
+                <h6>Price: <span>$130</span></h6>
               </div>
               <div class="new"><span>New</span></div>
             </a>
           </div>
         </div>
-        <!-- Product 8 -->
+<!-- Product 8 -->
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
             <a href="#">
@@ -181,14 +185,15 @@
                 <img src="images/tg hitam.jpeg" alt="Ring">
               </div>
               <div class="detail-box">
-                <h6>Ring</h6>
-                <h6>Price: <span>$450</span></h6>
+                <h6>Flower Black</h6>
+                <h6>Price: <span>$150</span></h6>
               </div>
               <div class="new"><span>New</span></div>
             </a>
           </div>
         </div>
       </div>
+      
 
       <div class="btn-box text-center">
         <a href="#">View All Products</a>

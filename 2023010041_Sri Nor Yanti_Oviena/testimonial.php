@@ -1,3 +1,7 @@
+<?php
+// Start session (if needed for authentication or cart functionality)
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -77,7 +81,7 @@
             <div class="box">
               <div class="client_info">
                 <div class="client_name">
-                  <h5>Susi</h5>
+                  <h5>Rahma</h5>
                   <h6>Default model text</h6>
                 </div>
                 <i class="fa fa-quote-left" aria-hidden="true"></i>
@@ -89,7 +93,7 @@
             <div class="box">
               <div class="client_info">
                 <div class="client_name">
-                  <h5>Nabila</h5>
+                  <h5>Ida</h5>
                   <h6>Default model text</h6>
                 </div>
                 <i class="fa fa-quote-left" aria-hidden="true"></i>
@@ -101,7 +105,7 @@
             <div class="box">
               <div class="client_info">
                 <div class="client_name">
-                  <h5>Serly</h5>
+                  <h5>Ummi</h5>
                   <h6>Default model text</h6>
                 </div>
                 <i class="fa fa-quote-left" aria-hidden="true"></i>

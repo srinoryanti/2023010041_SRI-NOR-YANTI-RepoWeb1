@@ -37,7 +37,7 @@ $result = $conn->query($sql);
         </div>
 
         <h2>Daftar Produk</h2>
-        <table class="table table-bordered">
+        <table class="table table-bordered table-striped">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -81,7 +81,7 @@ $result = $conn->query($sql);
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center p-3">
-        <p>&copy; 2025 Oviena Gamis | All Rights Reserved</p>
+        <p>&copy; 2025 Oviena Gamis | Sri Nor Yanti</p>
     </footer>
 
     <!-- Bootstrap JS (optional) -->

@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <h2>Tambah Produk Gamis Baru</h2>
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="mb-3">
-                <label for="nama" class="form-label">Nama Produk</label>
+                <label for="nama" class="form-label">Nama</label>
                 <input type="text" class="form-control" id="nama" name="nama" required>
             </div>
             <div class="mb-3">

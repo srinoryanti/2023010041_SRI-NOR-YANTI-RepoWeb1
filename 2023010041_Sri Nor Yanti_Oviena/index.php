@@ -1,3 +1,7 @@
+<?php
+// Start session (if needed for authentication or cart functionality)
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,7 +35,7 @@
     <header class="header_section">
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <a class="navbar-brand" href="index.php">
-          <img src="images/logo.png" alt="Yanti Shop Logo" style="height: 50px;" />
+          <img src="images/logo.png" alt="Oviena Shop Logo" style="height: 80px;" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -116,7 +120,7 @@
                   </div>
                   <div class="col-md-5">
                     <div class="img-box">
-                      <img src="images/candakotak.jpeg" alt="Fashion Image" />
+                      <img src="images/slider.png" alt="Fashion Image" />
                     </div>
                   </div>
                 </div>
@@ -134,7 +138,6 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-        </div>
       </div>
     </section>
   </div>
@@ -151,7 +154,7 @@
           <div class="box">
             <a href="#">
               <div class="img-box">
-                <img src="images/koleksi bordir.jpeg" alt="Gamis Dewasa" />
+                <img src="images/koleksi 1.jpg" alt="Gamis Dewasa" />
               </div>
               <div class="detail-box">
                 <h6>Gamis Motif Bordir</h6>
@@ -168,7 +171,7 @@
           <div class="box">
             <a href="#">
               <div class="img-box">
-                <img src="images/koleksi motif.jpeg" alt="Gamis Dewasa" />
+                <img src="images/koleksi 2.jpg" alt="Gamis Dewasa" />
               </div>
               <div class="detail-box">
               <h6>Gamis Bunga</h6>
@@ -185,7 +188,7 @@
           <div class="box">
             <a href="#">
               <div class="img-box">
-                <img src="images/koleksi canda.jpeg" alt="Gamis Dewasa" />
+                <img src="images/koleksi 3.jpg" alt="Gamis Dewasa" />
               </div>
               <div class="detail-box">
                 <h6>Gamis Canda Tali</h6>
@@ -203,7 +206,7 @@
           <div class="box">
             <a href="#">
               <div class="img-box">
-                <img src="images/koleksi brokat.jpeg" alt="Gamis Anak" />
+                <img src="images/koleksi polos.jpg" alt="Gamis Anak" />
               </div>
               <div class="detail-box">
                 <h6>Gamis Brukat</h6>
@@ -215,7 +218,74 @@
             </a>
           </div>
         </div>
-
+<!-- Product Item 5 -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="#">
+              <div class="img-box">
+                <img src="images/8.jpg" alt="Gamis Anak" />
+              </div>
+              <div class="detail-box">
+                <h6>Gamis Brukat</h6>
+                <h6>Price <span>$180</span></h6>
+              </div>
+              <div class="new">
+                <span>New</span>
+              </div>
+            </a>
+          </div>
+        </div>
+<!-- Product Item 6 -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="#">
+              <div class="img-box">
+                <img src="images/koleksi renda.jpg" alt="Gamis Anak" />
+              </div>
+              <div class="detail-box">
+                <h6>Gamis Brukat</h6>
+                <h6>Price <span>$180</span></h6>
+              </div>
+              <div class="new">
+                <span>New</span>
+              </div>
+            </a>
+          </div>
+        </div>
+<!-- Product Item 7 -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="#">
+              <div class="img-box">
+                <img src="images/7.jpg" alt="Gamis Anak" />
+              </div>
+              <div class="detail-box">
+                <h6>Gamis Brukat</h6>
+                <h6>Price <span>$180</span></h6>
+              </div>
+              <div class="new">
+                <span>New</span>
+              </div>
+            </a>
+          </div>
+        </div>
+<!-- Product Item 8 -->
+<div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="#">
+              <div class="img-box">
+                <img src="images/koleksi kotak.jpg" alt="Gamis Anak" />
+              </div>
+              <div class="detail-box">
+                <h6>Gamis Brukat</h6>
+                <h6>Price <span>$180</span></h6>
+              </div>
+              <div class="new">
+                <span>New</span>
+              </div>
+            </a>
+          </div>
+        </div>
         <!-- Additional Products... -->
       </div>
       <div class="btn-box">
@@ -268,7 +338,7 @@
             <div class="box">
               <div class="client_info">
                 <div class="client_name">
-                  <h5>Susi</h5>
+                  <h5>Rahma</h5>
                   <h6>Customer</h6>
                 </div>
                 <i class="fa fa-quote-left" aria-hidden="true"></i>
